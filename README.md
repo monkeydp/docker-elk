@@ -59,7 +59,7 @@ docker-compose up -d
 
 ![](.README/start_docker_elk.png)
 
-### 访问 Kibana 
+### 3. 访问 Kibana 
 
 http://localhost:5601
 
