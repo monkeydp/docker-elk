@@ -16,11 +16,11 @@
 
 - `docker-stack.yml` 中修改了以下三处
 
-    - `docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION}` → `elasticsearch:${ELK_VERSION}`
+    - `docker.elastic.co/elasticsearch/elasticsearch:$ELK_VERSION` → `elasticsearch:$ELK_VERSION`
 
-    - `docker.elastic.co/logstash/logstash::${ELK_VERSION}` → `logstash:${ELK_VERSION}`
+    - `docker.elastic.co/logstash/logstash::$ELK_VERSION` → `logstash:$ELK_VERSION`
 
-    - `docker.elastic.co/kibana/kibana:${ELK_VERSION}` → `kibana:${ELK_VERSION}`
+    - `docker.elastic.co/kibana/kibana:$ELK_VERSION` → `kibana:$ELK_VERSION`
 
 - `elasticsearch/Dockerfile` 中修改了
 
