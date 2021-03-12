@@ -1,5 +1,13 @@
 # Elastic stack (ELK) on Docker 中文版
 
+- [Elastic stack (ELK) on Docker 中文版](#elastic-stack--elk--on-docker----)
+    + [1. 主要修改](#1-----)
+      - [1.1 替换下载源](#11------)
+      - [1.2 修改默认语言为中文](#12----------)
+    + [Windows 额外步骤](#windows-----)
+    + [2. 启动项目](#2-----)
+    + [3. 访问 Kibana](#3----kibana)
+
 ### 1. 主要修改
 
 #### 1.1 替换下载源
@@ -35,7 +43,7 @@
 
 Kibana 默认中文
 
-`kibana.yml` 已经增加 `i18n.locale: "zh-CN"`
+`kibana/config/kibana.yml` 已经增加 `i18n.locale: "zh-CN"`
 
 ### Windows 额外步骤
 
