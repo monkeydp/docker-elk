@@ -14,13 +14,7 @@
 
 为了解决下载缓慢的问题, 已将下载源替换为 DockerHub 源
 
-- `docker-stack.yml` 中修改了以下三处
-
-    - `docker.elastic.co/elasticsearch/elasticsearch:$ELK_VERSION` → `elasticsearch:$ELK_VERSION`
-
-    - `docker.elastic.co/logstash/logstash::$ELK_VERSION` → `logstash:$ELK_VERSION`
-
-    - `docker.elastic.co/kibana/kibana:$ELK_VERSION` → `kibana:$ELK_VERSION`
+**Docker Compose**
 
 - `elasticsearch/Dockerfile` 中修改了
 
@@ -33,6 +27,15 @@
 - `logstash/Dockerfile` 中修改了
 
    - `FROM docker.elastic.co/logstash/logstash:${ELK_VERSION}` → `FROM logstash:${ELK_VERSION}`
+
+**Docker Stack**
+- `docker-stack.yml` 中修改了以下三处
+
+    - `docker.elastic.co/elasticsearch/elasticsearch:$ELK_VERSION` → `elasticsearch:$ELK_VERSION`
+
+    - `docker.elastic.co/logstash/logstash::$ELK_VERSION` → `logstash:$ELK_VERSION`
+
+    - `docker.elastic.co/kibana/kibana:$ELK_VERSION` → `kibana:$ELK_VERSION`
 
 **确保你已经使用了国内源**
 
